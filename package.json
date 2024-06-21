@@ -9,7 +9,10 @@
 		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
 		"lint": "prettier --check . && eslint .",
-		"format": "prettier --write ."
+		"format": "prettier --write .",
+		"deploy": "npm run deploy:sync && npm run deploy:invalidate",
+		"deploy:sync": "aws s3 sync ./build s3://geidai-cn-web",
+		"deploy:invalidate": "aws cloudfront create-invalidation --distribution-id $CLOUDFRONT_DISTRIBUTION_ID --paths '/*'"
 	},
 	"devDependencies": {
 		"@sveltejs/adapter-auto": "^3.0.0",
