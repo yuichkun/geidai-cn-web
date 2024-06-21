@@ -5,3 +5,10 @@
 html {
   background-color: #BCC1D1;
 }
+
+@font-face {
+  font-family: 'Toppan';
+  font-style: normal;
+  font-weight: 500;
+  src: local('/fonts/toppan.otf');
+}
