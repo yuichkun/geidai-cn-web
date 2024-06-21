@@ -3,9 +3,6 @@
 </script>
 
 <div class="relative">
-	<div class="fixed top-8 right-8">
-		<enhanced:img class="w-6" src="$lib/images/hamburger.svg" />
-	</div>
 	<MainImage />
 	<div class="fixed bottom-8 right-8 text-white">
 		<h1>
