@@ -1,7 +1,6 @@
 <script lang="ts">
 	import '../app.css';
 	import Menu from '$lib/Menu.svelte';
-	export const prerender = true;
 </script>
 
 <div class="relative">
