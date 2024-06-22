@@ -34,11 +34,23 @@
 		class="fixed w-screen h-screen bg-black top-0 left-0 transition-all bg-opacity-50"
 		style={overlayStyle}
 	>
-		<ul class="grid h-screen place-content-center">
+		<ul class="grid h-screen place-content-center gap-2">
 			<li>
 				<a href="/artist-map">
 					<enhanced:img src="$lib/images/map.svg" alt="map-icon" class="inline mr-2" width={20} />
 					<span class="text-white underline text-lg">Artist Locations</span>
+				</a>
+			</li>
+			<li>
+				<!-- TODO: add url -->
+				<a>
+					<enhanced:img
+						src="$lib/images/right-arrow.svg"
+						alt="map-icon"
+						class="inline mr-2"
+						width={20}
+					/>
+					<span class="text-white underline text-lg">Add Yours</span>
 				</a>
 			</li>
 		</ul>
