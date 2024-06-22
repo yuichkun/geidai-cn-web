@@ -19,6 +19,9 @@
 			}
 		}
 	}
+	const closeOverlay = () => {
+		isOpen = false;
+	};
 </script>
 
 <div class="relative">
@@ -36,14 +39,14 @@
 	>
 		<ul class="grid h-screen place-content-center gap-2">
 			<li>
-				<a href="/artist-map">
+				<a href="/artist-map" on:click={closeOverlay}>
 					<enhanced:img src="$lib/images/map.svg" alt="map-icon" class="inline mr-2" width={20} />
 					<span class="text-white underline text-lg">Artist Locations</span>
 				</a>
 			</li>
 			<li>
 				<!-- TODO: add url -->
-				<a>
+				<a on:click={closeOverlay}>
 					<enhanced:img
 						src="$lib/images/right-arrow.svg"
 						alt="map-icon"
