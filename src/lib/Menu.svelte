@@ -45,8 +45,8 @@
 				</a>
 			</li>
 			<li>
-				<!-- TODO: add url -->
-				<a on:click={closeOverlay}>
+				<!-- TODO: change url -->
+				<a on:click={closeOverlay} href="/artist-map">
 					<enhanced:img
 						src="$lib/images/right-arrow.svg"
 						alt="map-icon"

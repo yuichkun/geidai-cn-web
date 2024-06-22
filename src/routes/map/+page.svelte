@@ -1,1 +1,0 @@
-<div>this is the map page</div>
