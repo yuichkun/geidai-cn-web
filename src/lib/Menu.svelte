@@ -1,6 +1,6 @@
 <script lang="ts">
 	let isOpen = false;
-	let overlayRef: HTMLDivElement;
+	let overlayRef: HTMLElement;
 	const onClick = () => {
 		isOpen = !isOpen;
 	};
@@ -29,9 +29,18 @@
 			<enhanced:img src="$lib/images/hamburger.svg" alt="menu-button" />
 		{/if}
 	</button>
-	<div
+	<nav
 		bind:this={overlayRef}
-		class="fixed w-screen h-screen bg-black top-0 left-0 opacity-50 transition-all"
+		class="fixed w-screen h-screen bg-black top-0 left-0 transition-all bg-opacity-50"
 		style={overlayStyle}
-	></div>
+	>
+		<ul class="grid h-screen place-content-center">
+			<li>
+				<a href="/artist-map">
+					<enhanced:img src="$lib/images/map.svg" alt="map-icon" class="inline mr-2" width={20} />
+					<span class="text-white underline text-lg">Artist Locations</span>
+				</a>
+			</li>
+		</ul>
+	</nav>
 </div>
