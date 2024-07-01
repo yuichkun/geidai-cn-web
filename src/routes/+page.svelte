@@ -5,7 +5,7 @@
 		<div class="flex justify-end">
 			<img class="mt-5 mr-2" src="/map.svg" alt="map" />
 		</div>
-		<img class="ml-4" src="/description.svg" alt="map" />
+		<img class="ml-4 mb-9" src="/description.svg" alt="map" />
 	</div>
 	<!-- PC -->
 	<div class="hidden lg:flex">
@@ -16,7 +16,7 @@
 		/>
 		<div class="flex flex-col justify-between flex-grow">
 			<img class="mt-5 ml-auto w-[320px]" src="/map.svg" alt="map" />
-			<img class="mb-7 w-[680px]" src="/description.svg" alt="map" />
+			<img class="pb-9 w-[680px]" src="/description.svg" alt="map" />
 		</div>
 	</div>
 </div>
