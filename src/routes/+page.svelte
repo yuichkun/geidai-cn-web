@@ -10,7 +10,7 @@
 	<!-- PC -->
 	<div class="hidden lg:flex">
 		<enhanced:img
-			class="h-screen w-auto p-8 min-w-[670px]"
+			class="p-8 h-screen object-contain"
 			src="$lib/images/main-image.png"
 			alt="李叔同"
 		/>
